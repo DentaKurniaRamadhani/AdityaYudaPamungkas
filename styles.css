@@ -1,0 +1,164 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #007BFF 0%, #e1f5fe 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    padding: 3rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+header .container, footer .container {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 0.5rem;
+}
+
+/* General Section Styling */
+section {
+    padding: 1.5rem 0; /* Reduced padding for closer sections */
+}
+
+.section-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem; /* Adjusted padding for content */
+    background: rgba(230, 230, 230, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Info Card Styling */
+.info-card {
+    background: #b2e7ff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Styling */
+.project {
+    display: flex;
+    align-items: center;
+    background: #b2e7ff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+    height: 100px;
+    width: auto;
+    margin-right: 1.5rem;
+    border-radius: 8px;
+}
+
+.project-text {
+    text-align: left;
+}
+
+/* Skills List Styling */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #b2e7ff;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact List Styling */
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-img {
+        height: 500px; /* Set height to 100px */
+        width: auto; /* Ensure width adjusts proportionally */
+        margin-right: 2rem;
+        border-radius: 10px;
+        display: block; /* Ensure block display to avoid layout issues */
+    }
+}
